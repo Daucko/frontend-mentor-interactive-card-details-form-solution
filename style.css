@@ -34,7 +34,8 @@ body {
 /* ---------- Background panel ---------- */
 .banner {
   position: absolute;
-  inset: 0 auto 0 0;
+  /* extends 18.5% past the body so it matches the .cards overflow (top: 18.5%; height: 100%) */
+  inset: 0 auto -18.5% 0;
   width: 33.5%;
   background-image: url('images/bg-main-desktop.png');
 }
@@ -299,6 +300,9 @@ form[hidden] {
 }
 
 .attribution {
+  position: absolute;
+  bottom: -17%;
+  right: 30%;
   font-size: 0.6875rem;
   text-align: center;
 }
